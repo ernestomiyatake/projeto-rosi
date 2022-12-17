@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@font-face {
+    font-family: 'Salgados';
+    src: url('../fontes/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #E0BCD4;
+    --cor1: #AB90A2;
+    --cor2: #E66FBF;
+    --cor3: #700F50;
+    --cor4: #61515C;
+ 
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Lobster', cursive;
+    --fonte-salgados: 'Salgados',cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrão);
+}
+
+header {
+    background-image:linear-gradient(to bottom, var(--cor1),var(--cor3));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque) ;
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 2opx;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+header > p {
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.311);
+}
+
+nav {
+    background-color: var(--cor3);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.198)
+}
+
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+
+main {
+    min-width: 300px;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: white;
+    padding:20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.477);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: var(--cor3);
+    font-family: var(--fonte-salgados);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2{
+    font-family: var(--fonte-salgados);
+    color: var(--cor3);
+    font-size: 1.3em;
+    font-weight: normal;
+    background-image: linear-gradient(to right, var(--cor1),transparent);
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img { 
+    width: 100%;
+}
+
+main video {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    padding: 5px;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+}
+div{
+    background-color: var(--cor2);
+}
+
+div h1{
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin: 50px;
+    text-align: center;
+    
+}
+
+div ul {
+    font-family: var(--fonte-salgados);
+    font-size: 2em;
+}
+
+div > a >img {
+    display: block;
+    margin-left: 600px;
+   
+}
+
+div p {
+    padding: 15px;
+    text-align: justify;
+    font-size: 1.5em;
+}
+div h2 {
+    padding: 15px;
+    font-size: 2em;
+}

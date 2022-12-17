@@ -166,11 +166,12 @@ div h1{
 div ul {
     font-family: var(--fonte-salgados);
     font-size: 2em;
+    columns: 1;
 }
 
 div > a >img {
     display: block;
-    margin-left: 600px;
+    margin-left: 200px;
    
 }
 
